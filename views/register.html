@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../node_modules/axios"></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Job App Register</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>Jobs <span>App</span></h3>
+        </div>
+    </header>
+    <div class="login-page">
+        <div class="container">
+            <div class="card">
+                <h3>Register</h3>
+                <form action="" method="POST" class="register-form">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <input type="submit" name="submit" value="Register" id="submit-form-btn">
+                </form>
+                <p>Aleardy a member? <a href="/api/v1/view/login">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="/public/JS/registerHandle.js"></script>
+</body>
+
+</html>
